@@ -1,22 +1,44 @@
+
+<!--El código será reescrito en breve para reducirlo.
+No se ha hecho hasta el momento por falta de tiempo-->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="png" href="./imagenes/music_15509.png">
-    <script src="https://kit.fontawesome.com/bdec5d58ea.js" crossorigin="anonymous"></script>
-    <title>Natalia Schwindt</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/bdec5d58ea.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="png" href="./imagenes/music.png">
+        <title>Natalia Schwindt</title>
+    </head>
     <body>
         <main>
-            <nav class="sectionSocNet">
+            <div class="contenedor">
+                <div class="overlay" id="overlay">
+                    <div class="popup" id="popup">
+                        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                        <h3>Envíeme sus datos</h3>
+                        <h4>y en breve me pondré en contacto con usted.</h4>
+                        <form action="#">
+                            <div class="contenedor-inputs">
+                                <input type="text" placeholder="Nombre" required>
+                                <input type="email" placeholder="Email" required>
+                                <textarea class="mensaje" name="Mensaje" rows="5" cols="48" placeholder="Mensaje.." required></textarea>
+                            </div>
+                            <input type="submit" class="btn-submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <nav>
                 <h3>Natalia Schwindt</h3>
-                <div class="socialNetworks">
-                        <a href="https://www.facebook.com/" rel="noopener" title="facebook" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://www.instagram.com/?__coig_login=1" rel="noopener" title="instagram" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                        <a href="naty8014@gmail.com" title="e-mail" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
+                <div>
+                        <a href="https://www.facebook.com/natyschwindt" rel="noopener" title="facebook" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/natalia-schwindt-3a3438115/" rel="noopener" title="linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/natalia.schwindt/" rel="noopener" title="instagram" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" title="e-mail" id="btn-abrir-popup"><i class="fa-solid fa-square-envelope"></i></a>
                         <button>Logout</button>
                 </div>
             </nav>
@@ -25,8 +47,7 @@
                     <div>    
                         <img src="./imagenes/logoArgentinaPrograma.jpg" alt="logoArgProg">
                         <p>#Yo Programo</p>
-                    </div>
-                
+                    </div>                
                     <div>
                         <form action="#">
                             <input type="text" name="user" placeholder="Usuario" required autofocus>
@@ -37,35 +58,100 @@
                 </div>
                 <div class="contentProfile">
                     <img src="./imagenes/avatar.jpg" alt="imgPerfil">
-                    <button><i class="fa-solid fa-pencil"></i></button>
+                    <a href="#" class="btn-abrir-popup2" id="btn-abrir-popup2"><i class="fa-solid fa-pencil"></i></a>
                     <h3>Natalia Schwindt</h3>
                     <p>Full Stack Developer Junior</p>
                 </div>
-                <img class="clave" src="./imagenes/clave de sol.png" alt="clave de sol">
+                <img class="clave" src="./imagenes/claveDeSol.png" alt="clave de sol">
             </header>
-            <section class="sectionEduc margenInf">
+            <div class="contenedor2">
+                <div class="overlay2" id="overlay2">
+                    <div class="popup2" id="popup2">
+                        <a href="#" class="btn-cerrar-popup2" id="btn-cerrar-popup2"><i class="fas fa-times"></i></a>
+                        <h3>Ingrese los datos.</h3>
+                        <form action="#">
+                            <div class="contenedor2-inputs">
+                                <input type="text" placeholder="Nombre">
+                                <input type="text" placeholder="Apellido">
+                                <input type="text" placeholder="Título">
+                                <input type="text" placeholder="Url de la foto">
+                            </div>
+                            <input type="submit" class="btn-submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <section>
                 <div class="sectionHeader">
-                    
                     <h2><i class="fa-solid fa-graduation-cap"></i> Educación</h2>
                     <div>
-                        <button><i class="fa-solid fa-plus"></i></button>
-                        <button><i class="fa-solid fa-pencil"></i></button>
-                        <button><i class="fa-solid fa-trash-can"></i></button>
+                        <a href="#" class="btn-abrir-popup3" id="btn-abrir-popup3"><i class="fa-solid fa-plus"></i></a>
+                        <a href="#" class="btn-abrir-popup4" id="btn-abrir-popup4"><i class="fa-solid fa-pencil"></i></a>
+                        <a href="#" class="btn-abrir-popup5" id="btn-abrir-popup5"><i class="fa-solid fa-trash-can"></i></a>
+                    </div>
+                </div>
+                <div class="contenedor3">
+                    <div class="overlay3" id="overlay3">
+                        <div class="popup3" id="popup3">
+                            <a href="#" class="btn-cerrar-popup3" id="btn-cerrar-popup3"><i class="fas fa-times"></i></a>
+                            <h3>Ingrese los datos a agregar.</h3>
+                            <form action="#">
+                                <div class="contenedor3-inputs">
+                                    <input type="text" placeholder="Carrera">
+                                    <input type="text" placeholder="Institución">
+                                    <input type="text" placeholder="Año">
+                                    <input type="text" placeholder="Url del logo">
+                                </div>
+                                <input type="submit" class="btn-submit" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor4">
+                    <div class="overlay4" id="overlay4">
+                        <div class="popup4" id="popup4">
+                            <a href="#" class="btn-cerrar-popup4" id="btn-cerrar-popup4"><i class="fas fa-times"></i></a>
+                            <h3>Ingrese los datos a editar.</h3>
+                            <form action="#">
+                                <div class="contenedor4-inputs">
+                                    <input type="text" placeholder="Carrera">
+                                    <input type="text" placeholder="Institución">
+                                    <input type="text" placeholder="Año">
+                                    <input type="text" placeholder="Url del logo">
+                                </div>
+                                <input type="submit" class="btn-submit" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor5">
+                    <div class="overlay5" id="overlay5">
+                        <div class="popup5" id="popup5">
+                            <a href="#" class="btn-cerrar-popup5" id="btn-cerrar-popup5"><i class="fas fa-times"></i></a>
+                            <h3>Ingrese el estudio a eliminar.</h3>
+                            <form action="#">
+                                <div class="contenedor5-inputs">
+                                <input type="text" placeholder="Carrera">
+                                <input type="text" placeholder="Institución">
+                            </div>
+                                <input type="submit" class="btn-submit" value="Enviar">
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="sectionBody">
-                    <div>
+                    <div class="card">
                         <h3>Full Stack Developer Junior</h3>
                         <div>
                             <div>
                                 <p>Argentina Programa #Yo Programo</p>
-                                <p>2021 - Actualidad</p>
+                                <p>2021 - 2022</p>
                             </div>
                             <a href="https://argentinaprograma.inti.gob.ar/" rel="noopener" target="_blank"><img src="./imagenes/logoArgentinaPrograma.jpg" alt="argProg"></a>
                         </div>
                     </div>
 
-                    <div>
+                    <div class="card">
                         <h3>Curso de Desarrollo con Stack Mean/Mern</h3>
                         <div>
                             <div>
@@ -76,7 +162,7 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="card">
                         <h3>Soporte Operativo para PC</h3>
                         <div>    
                             <div>
@@ -87,19 +173,69 @@
                         </div>
                     </div>
                 </div>
+                <hr>
             </section>
-
-            <section class="sectionExpLab margenInf">
+            
+            <section>
                 <div class="sectionHeader">
                     <h2><i class="fa-solid fa-laptop-code"></i> Experiencia Laboral</h2>
                     <div>
-                        <button><i class="fa-solid fa-plus"></i></button>
-                        <button><i class="fa-solid fa-pencil"></i></button>
-                        <button><i class="fa-solid fa-trash-can"></i></button>
+                        <a href="#" class="btn-abrir-popup6" id="btn-abrir-popup6"><i class="fa-solid fa-plus"></i></a>
+                        <a href="#" class="btn-abrir-popup7" id="btn-abrir-popup7"><i class="fa-solid fa-pencil"></i></a>
+                        <a href="#" class="btn-abrir-popup8" id="btn-abrir-popup8"><i class="fa-solid fa-trash-can"></i></a>
+                    </div>
+                </div>
+                <div class="contenedor6">
+                    <div class="overlay6" id="overlay6">
+                        <div class="popup6" id="popup6">
+                            <a href="#" class="btn-cerrar-popup6" id="btn-cerrar-popup6"><i class="fas fa-times"></i></a>
+                            <h3>Ingrese los datos a agregar.</h3>
+                            <form action="#">
+                                <div class="contenedor6-inputs">
+                                    <input type="text" placeholder="Empresa">
+                                    <input type="text" placeholder="Puesto">
+                                    <input type="text" placeholder="Año">
+                                    <input type="text" placeholder="Url del logo">
+                                </div>
+                                <input type="submit" class="btn-submit" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor7">
+                    <div class="overlay7" id="overlay7">
+                        <div class="popup7" id="popup7">
+                            <a href="#" class="btn-cerrar-popup7" id="btn-cerrar-popup7"><i class="fas fa-times"></i></a>
+                            <h3>Ingrese los datos a editar.</h3>
+                            <form action="#">
+                                <div class="contenedor7-inputs">
+                                    <input type="text" placeholder="Empresa">
+                                    <input type="text" placeholder="Puesto">
+                                    <input type="text" placeholder="Año">
+                                    <input type="text" placeholder="Url del logo">
+                                </div>
+                                <input type="submit" class="btn-submit" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor8">
+                    <div class="overlay8" id="overlay8">
+                        <div class="popup8" id="popup8">
+                            <a href="#" class="btn-cerrar-popup8" id="btn-cerrar-popup8"><i class="fas fa-times"></i></a>
+                            <h3>Ingrese el trabajo a eliminar.</h3>
+                            <form action="#">
+                                <div class="contenedor8-inputs">
+                                    <input type="text" placeholder="Empresa">
+                                    <input type="text" placeholder="Puesto">
+                                </div>
+                                <input type="submit" class="btn-submit" value="Enviar">
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="sectionBody">
-                    <div>
+                    <div class="card">
                         <h3>Simplia</h3>
                         <div>
                             <div>
@@ -109,7 +245,7 @@
                             <a href="https://www.simpliafacility.com/contacto-facility-solutions/" rel="noopener" target="_blank"><img src="./imagenes/logoSimplia.png" alt="logoSimplia"></a>
                         </div>
                     </div>
-                    <div>
+                    <div class="card">
                         <h3>Prosegur</h3>
                         <div>
                             <div>
@@ -120,97 +256,208 @@
                         </div>
                     </div>
                 </div>
+                <hr>
             </section>
-
-            <section class="sectionSkills margenInf">
+            
+            <section>
                 <div class="sectionHeader">
-                    <h2><i class="fa-solid fa-users"></i> Hard Skills & Soft Skills - Idiomas</h2>
+                    <h2><i class="fa-solid fa-users"></i> Hard Skills & Soft Skills</h2>
                     <div>
-                        <a href="#"><button><i class="fa-solid fa-plus"></i></button></a>
-                        <a href="#"><button><i class="fa-solid fa-pencil"></i></button></a>
-                        <a href="#"><button><i class="fa-solid fa-trash-can"></i></button></a>
+                        <a href="#" class="btn-abrir-popup9" id="btn-abrir-popup9"><i class="fa-solid fa-plus"></i></a>
+                        <a href="#" class="btn-abrir-popup10" id="btn-abrir-popup10"><i class="fa-solid fa-pencil"></i></a>
+                        <a href="#" class="btn-abrir-popup11" id="btn-abrir-popup11"><i class="fa-solid fa-trash-can"></i></a>
+                    </div>
+                </div>
+                <div class="contenedor9">
+                    <div class="overlay9" id="overlay9">
+                        <div class="popup9" id="popup9">
+                            <a href="#" class="btn-cerrar-popup9" id="btn-cerrar-popup9"><i class="fas fa-times"></i></a>
+                            <h3>Ingrese el hard skill a agregar.</h3>
+                            <form action="#">
+                                <div class="contenedor9-inputs">
+                                    <input type="text" placeholder="Nombre">
+                                    <input type="text" placeholder="Porcentaje">
+                                    <h3>Ingrese el soft skill a agregar.</h3>
+                                    <input type="text" placeholder="Nombre">
+                                    <input type="text" placeholder="Porcentaje">
+                                    <h3>Ingrese el idioma a agregar.</h3>
+                                    <input type="text" placeholder="Idioma">
+                                    <input type="text" placeholder="Nivel">
+                                </div>
+                                <input type="submit" class="btn-submit" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor10">
+                    <div class="overlay10" id="overlay10">
+                        <div class="popup10" id="popup10">
+                            <a href="#" class="btn-cerrar-popup10" id="btn-cerrar-popup10"><i class="fas fa-times"></i></a>
+                            <h3>Ingrese el hard skill a editar.</h3>
+                            <form action="#">
+                                <div class="contenedor10-inputs">
+                                    <input type="text" placeholder="Nombre">
+                                    <input type="text" placeholder="Porcentaje">
+                                    <h3>Ingrese el soft skill a editar.</h3>
+                                    <input type="text" placeholder="Nombre">
+                                    <input type="text" placeholder="Porcentaje">
+                                    <h3>Ingrese el idioma a editar.</h3>
+                                    <input type="text" placeholder="Idioma">
+                                    <input type="text" placeholder="Nivel">
+                                </div>
+                                <input type="submit" class="btn-submit" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor11">
+                    <div class="overlay11" id="overlay11">
+                        <div class="popup11" id="popup11">
+                            <a href="#" class="btn-cerrar-popup11" id="btn-cerrar-popup11"><i class="fas fa-times"></i></a>
+                            <h3>Ingrese el hard skill a eliminar.</h3>
+                            <form action="#">
+                                <div class="contenedor11-inputs">
+                                    <input type="text" placeholder="Nombre">
+                                    <h3>Ingrese el soft skill a eliminar.</h3>
+                                    <input type="text" placeholder="Nombre">                                    
+                                    <h3>Ingrese el idioma a eliminar.</h3>
+                                    <input type="text" placeholder="Idioma">                                    
+                                </div>
+                                <input type="submit" class="btn-submit" value="Enviar">
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="sectionBody">
-                    <div>
+                    <div class="card">
                         <h3>Hard Skills</h3>
                         <div>
-                            <ul type="circle">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>SASS</li>
-                                <li>Boostrap</li>
-                                <li>Javascript</li>
-                                <li>Typescript</li>
-                            </ul>
+                            <div class="html5"></div>
+                            <div class="css3"></div>
+                            <div class="sass"></div>
+                            <div class="boostrap"></div>
+                            <div class="javascript"></div>
+                            <div class="typescript"></div>
+                            <div class="angular"></div>
+                            <div class="mysql"></div>
+                            <div class="java"></div>
+                            <div class="springboot"></div>
                         </div>
                     </div>
-                    <div>
+                    <div class="card">
                         <h3>Soft Skills</h3>
                         <div>
-                            <ul type="circle">
-                                <li>Trabajo en equipo</li>
-                                <li>Liderazgo</li>
-                                <li>Comunicación asertiva</li>
-                                <li>Atención al cliente</li>
-                                <li>Capacidad analítica y de resolución de problemas</li>
-                                <li>Atención al detalle</li>
-                                <li>Deseos de aprender y estar a la vanguardia</li>
-                                <li>Adaptabilidad, saber priorizar y manejo de tareas múltiples</li>
-                                <li>Nociones de Scrum</li>
-                            </ul>
+                            <div class="trabajoEnEquipo"></div>
+                            <div class="liderazgo"></div>
+                            <div class="comunicacionAsertiva"></div>
+                            <div class="atencionAlCliente"></div>
+                            <div class="capacidadAnalitica"></div>
+                            <div class="atencionAlDetalle"></div>
+                            <div class="deseosDeAprender"></div>
+                            <div class="adaptabilidad"></div>
+                            <div class="scrum"></div>
                         </div>
                     </div>
-                    <div>
-                        <h3>Idiomas</h3>
-                        <div>
+                    <div class="card">
+                        <h3 class="idiomas">Idiomas</h3>
+                        <div class="card">
                             <ul type="circle">
-                                <li>Inglés básico</li>
-                                <li>Ruso básico</li>
+                                <li>Inglés inicial</li>
+                                <li>Ruso inicial</li>
                             </ul>
                         </div>
                     </div>  
                 </div>
+                <hr>
             </section>
-
-            <section class="sectionProyectos margenInf">
+            
+            <section>
                 <div class="sectionHeader">
                     <h2><i class="fa-solid fa-code"></i> Proyectos</h2>
                     <div>
-                        <button><i class="fa-solid fa-plus"></i></button>
-                        <button><i class="fa-solid fa-pencil"></i></button>
-                        <button><i class="fa-solid fa-trash-can"></i></button>
+                        <a href="#" title="e-mail" id="btn-abrir-popup12"><i class="fa-solid fa-plus"></i></a>
+                        <a href="#" title="e-mail" id="btn-abrir-popup13"><i class="fa-solid fa-pencil"></i></a>
+                        <a href="#" title="e-mail" id="btn-abrir-popup14"><i class="fa-solid fa-trash-can"></i></a>
+                    </div>
+                </div>
+                <div class="contenedor12">
+                    <div class="overlay12" id="overlay12">
+                        <div class="popup12" id="popup12">
+                            <a href="#" id="btn-cerrar-popup12" class="btn-cerrar-popup12"><i class="fas fa-times"></i></a>
+                            <h3>Ingrese el proyecto a agregar.</h3>                            
+                            <form action="#">
+                                <div class="contenedor12-inputs">
+                                    <input type="text" placeholder="Nombre">
+                                    <input type="text" placeholder="Estado">
+                                    <textarea class="mensaje" name="Descripción" rows="5" cols="48" placeholder="Descripción.." required></textarea>
+                                </div>
+                                <input type="submit" class="btn-submit" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor13">
+                    <div class="overlay13" id="overlay13">
+                        <div class="popup13" id="popup13">
+                            <a href="#" id="btn-cerrar-popup13" class="btn-cerrar-popup13"><i class="fas fa-times"></i></a>
+                            <h3>Ingrese el proyecto a editar.</h3>
+                            <form action="#">
+                                <div class="contenedor13-inputs">
+                                    <input type="text" placeholder="Nombre">
+                                    <input type="text" placeholder="Estado">
+                                    <textarea class="mensaje" name="Descripción" rows="5" cols="48" placeholder="Descripción.." required></textarea>
+                                </div>
+                                <input type="submit" class="btn-submit" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor14">
+                    <div class="overlay14" id="overlay14">
+                        <div class="popup14" id="popup14">
+                            <a href="#" id="btn-cerrar-popup14" class="btn-cerrar-popup14"><i class="fas fa-times"></i></a>
+                            <h3>Ingrese el proyecto a eliminar.</h3>
+                            <form action="#">
+                                <div class="contenedor14-inputs">
+                                    <input type="text" placeholder="Nombre">
+                                    <input type="text" placeholder="Estado">                                    
+                                </div>
+                                <input type="submit" class="btn-submit" value="Enviar">
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="sectionBody">
-                    <div>
+                    <div class="card">
                         <h3>DCards</h3>
                         <div>
-                            <p>En proceso</p>
+                            <p>(En proceso)</p>
                             <p>Esta es una página de tarjetas electrónicas. No sólo contiene los datos del comercio, sino que además se puede acceder a todos sus productos y comprarlos. Se puede gestionar el envío y pagar.</p>
                             <a href="#" title="DCards"></a>
                         </div>
                     </div>
-                    <div>
+                    <div class="card">
                         <h3>onlysoncomic.com</h3>
                         <div>
-                            <p>En proceso</p>
+                            <p>(En proceso)</p>
                             <p>Esta es una página de comics. Consta de varias páginas sdonde se puede acceder a los capítulos, material extra y ponerse en contacto con la autora.</p>
                             <a href="#" title="onlysoncomic"></a>
                         </div>
                     </div>
 
-                    <div>
+                    <div class="card">
                         <h3>Recetas para todos los días</h3>
                         <div>
-                            <p>En proceso</p>
+                            <p>(En proceso)</p>
                             <p>Esta es una página de recetas realizadas cotidianamente. Sirve como un recuerdo de recetas sencillas al momento de decidir qué cocinar todos los días. Pueden ver recetas, enviar recetas para que las agregue una vez probadas, o ponerse en contacto conmigo.</p>
                             <a href="#" title="Recetas para todos los días"></a>
                         </div>
                     </div>
                 </div>
             </section>
+            
             <footer>&copy;Natalia Schwindt - Todos los derechos reservados</footer>
         </main>
+        <script src="popup.js"></script>
     </body>
 </html>
